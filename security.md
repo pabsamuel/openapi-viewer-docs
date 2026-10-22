@@ -23,7 +23,7 @@ Email **support@atesensoftware.com** with the subject line **SECURITY**. Include
 
 - Confluence requests run as the signed-in user (`asUser`); the app cannot read or change what that user cannot.
 - The migration tool checks, before every action, that the user is a Confluence administrator, and a migration can only be seen, resumed, undone or deleted by the administrator who started it.
-- Pages are only changed after an administrator reviews a preview and starts the migration; every change is a normal page version and can be undone.
+- Pages are only changed after an administrator reviews a preview and starts the migration; every change is a normal page version and can be undone. The only other write is **Create test page**: when an administrator clicks it, the app creates one page with sample macros under a page that administrator chose, with that administrator's permissions.
 
 ## Handling of API definitions and URLs
 

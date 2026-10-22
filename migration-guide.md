@@ -44,7 +44,16 @@ What is not carried over:
 
 ## What if the scan finds nothing?
 
-The scan lists only pages that contain a macro from one of the supported older apps. On a site without such macros it shows the message *"No pages with legacy Swagger/OpenAPI macros were found that you can see"*; this is the expected result, and nothing is changed. To try the viewer itself without legacy macros, see [Try the viewer in two minutes](support.html#try-the-viewer).
+The scan lists only pages that contain a macro from one of the supported older apps. On a site without such macros it shows the message *"No pages with legacy Swagger/OpenAPI macros were found that you can see"*; this is the expected result, and nothing is changed.
+
+To try the whole migration on such a site (version 3.1.0 and later):
+
+1. On the migration page, under **Try it on a test page**, paste the URL (or ID) of any page you can edit and click **Create test page**.
+2. The app creates a child page with three sample legacy macros: one that loads `https://petstore3.swagger.io/api/v3/openapi.json`, one with a pasted OpenAPI 3 definition and one with a pasted Swagger 2 definition. The page appears in the preview at once; **Scan for legacy macros** also finds it after Confluence's search index updates (usually within a few minutes).
+3. Click **Convert 1 page**, open the test page and check the three definitions. Then try **Undo this migration**.
+4. Delete the test page when you are done.
+
+To try the viewer itself without legacy macros, see [Try the viewer in two minutes](support.html#try-the-viewer).
 
 ## Good to know
 

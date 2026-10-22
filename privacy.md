@@ -23,7 +23,7 @@ The definition is passed to the reader's browser and rendered there. **The app d
 
 **The migration tool** (Confluence administration → Apps) finds macros from older Connect-based Swagger/OpenAPI apps and converts them to the OpenAPI Viewer macro. To show progress, produce a report and let you undo a migration, it stores for each migrated page: the page ID, page title, space name, page version numbers, the result (for example "converted" or "failed") and an error code. It also stores the Atlassian account ID of the administrator who started the migration, so that only that administrator can follow, resume, report on, undo or delete it.
 
-The app does not store email addresses or display names, and does not read comments, user profiles or any content other than the pages it is asked to scan or migrate. Before each migration action it makes one request for the signed-in user's own administrator status; nothing from that response is stored or logged.
+The app does not store email addresses or display names, and does not read comments, user profiles or any content other than the pages it is asked to scan or migrate. Before each migration action it makes one request for the signed-in user's own administrator status; nothing from that response is stored or logged. When an administrator clicks **Create test page**, the app creates one page with sample macros under the page the administrator chose; nothing about that page is stored by the app.
 
 ## 2. Where data is stored and where it goes
 
