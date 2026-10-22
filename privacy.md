@@ -1,13 +1,13 @@
 ---
-title: Privacy Policy — OpenAPI Viewer for Confluence
+title: Privacy Policy — Atesen OpenAPI & Swagger Viewer for Confluence
 ---
 
 # Privacy Policy
 
-**App:** OpenAPI Viewer for Confluence
+**App:** Atesen OpenAPI & Swagger Viewer for Confluence
 **Publisher:** Atesen Software (independent developer, Türkiye)
-**Contact:** sametatesen2@gmail.com
-**Last updated:** 2 October 2026
+**Contact:** support@atesensoftware.com
+**Last updated:** 22 October 2026
 
 ## 1. What this app does with data
 
@@ -21,9 +21,9 @@ The app runs inside your Atlassian Cloud site on the Atlassian Forge platform. I
 
 The definition is passed to the reader's browser and rendered there. **The app does not store API definitions, and does not write them to logs.**
 
-**The migration tool** (Confluence administration → Apps) finds macros from older Connect-based Swagger/OpenAPI apps and converts them to the OpenAPI Viewer macro. To show progress, produce a report and let you undo a migration, it stores for each migrated page: the page ID, page title, space name, page version numbers, the result (for example "converted" or "failed") and an error code.
+**The migration tool** (Confluence administration → Apps) finds macros from older Connect-based Swagger/OpenAPI apps and converts them to the OpenAPI Viewer macro. To show progress, produce a report and let you undo a migration, it stores for each migrated page: the page ID, page title, space name, page version numbers, the result (for example "converted" or "failed") and an error code. It also stores the Atlassian account ID of the administrator who started the migration, so that only that administrator can follow, resume, report on, undo or delete it.
 
-The app does not store Atlassian account IDs, email addresses or display names, and does not read comments, user profiles or any content other than the pages it is asked to scan or migrate.
+The app does not store email addresses or display names, and does not read comments, user profiles or any content other than the pages it is asked to scan or migrate. Before each migration action it makes one request for the signed-in user's own administrator status; nothing from that response is stored or logged.
 
 ## 2. Where data is stored and where it goes
 
@@ -33,7 +33,7 @@ All processing and storage happen on Atlassian's Forge platform, inside Atlassia
 
 ## 3. How long data is kept
 
-Migration records are deleted automatically **30 days** after the migration was started. Uninstalling the app removes the app's storage according to Atlassian's Forge data retention policies. Macro settings, including pasted definitions, are part of your pages and remain under your control in Confluence.
+Migration records (including the administrator account ID) are deleted automatically **30 days** after the migration was started. A weekly scheduled function reports the stored administrator account IDs to Atlassian's Forge personal data reporting API; migration records of accounts that Atlassian reports as closed are deleted, and for accounts reported as updated the records are kept and only the re-check time is stored. Uninstalling the app removes the app's storage according to Atlassian's Forge data retention policies. Macro settings, including pasted definitions, are part of your pages and remain under your control in Confluence.
 
 ## 4. Logs
 
@@ -45,11 +45,11 @@ For data processed by this app on your site, your organization is the controller
 
 ## 6. Your requests
 
-To ask about data handled by this app, or to request deletion of migration records on your site, write to sametatesen2@gmail.com.
+To ask about data handled by this app, or to request deletion of migration records on your site, write to support@atesensoftware.com.
 
 ## 7. Security
 
-All Confluence requests run with the permissions of the user who views the page or runs the migration; the app cannot read or change pages that user cannot. The migration tool is only available to Confluence administrators. URLs are limited to http and https, URLs containing credentials are rejected, and definitions larger than 5 MB are refused. Macros from older apps that loaded definitions with a username, password or token are not migrated, so no credentials are copied into the new macro.
+All Confluence requests run with the permissions of the user who views the page or runs the migration; the app cannot read or change pages that user cannot. The migration tool is only available to Confluence administrators. URLs must use https (also on each of at most 3 redirects), URLs containing credentials and literal private or local IP addresses are rejected, requests time out after 10 seconds, and definitions larger than 5 MB are refused. See the [security page](security.html) for details. Macros from older apps that loaded definitions with a username, password or token are not migrated, so no credentials are copied into the new macro.
 
 ## 8. Changes
 

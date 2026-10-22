@@ -1,8 +1,8 @@
 ---
-title: OpenAPI Viewer for Confluence — Atesen Software
+title: Atesen OpenAPI & Swagger Viewer for Confluence — Atesen Software
 ---
 
-# OpenAPI Viewer for Confluence
+# Atesen OpenAPI & Swagger Viewer for Confluence
 
 Show OpenAPI 3 and Swagger 2 documentation on Confluence pages — from a pasted definition, a page attachment or a URL — and move pages from older Connect-based Swagger macros in one step.
 
@@ -11,4 +11,4 @@ Show OpenAPI 3 and Swagger 2 documentation on Confluence pages — from a pasted
 - [Privacy policy](privacy.html)
 - [End user terms](terms.html)
 
-Published by **Atesen Software** · sametatesen2@gmail.com
+Published by **Atesen Software** · support@atesensoftware.com

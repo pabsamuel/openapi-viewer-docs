@@ -33,7 +33,7 @@ What is not carried over:
 
 ## Step by step
 
-1. Install **OpenAPI Viewer for Confluence** from the Atlassian Marketplace. Keep the old app installed for now.
+1. Install **Atesen OpenAPI & Swagger Viewer for Confluence** from the Atlassian Marketplace. Keep the old app installed for now.
 2. Go to **Confluence administration → Apps → OpenAPI Viewer - migrate Swagger macros**.
 3. Click **Scan for legacy macros**. You'll see every page you can access that contains one of the macros above, how many macros it has and where each definition comes from.
 4. Untick any pages you want to leave alone, then click **Convert**.
@@ -42,10 +42,14 @@ What is not carried over:
 7. Not happy? Click **Undo this migration**. Each page goes back to its previous version, unless someone edited it after the migration — those pages are left as they are and listed in the report.
 8. When everything looks right, uninstall the old Connect app.
 
+## What if the scan finds nothing?
+
+The scan lists only pages that contain a macro from one of the supported older apps. On a site without such macros it shows the message *"No pages with legacy Swagger/OpenAPI macros were found that you can see"*; this is the expected result, and nothing is changed. To try the viewer itself without legacy macros, see [Try the viewer in two minutes](support.html#try-the-viewer).
+
 ## Good to know
 
 - Every converted page gets a normal page version with the message *"Converted Swagger/OpenAPI macros (OpenAPI Viewer migration)"*, so you can also restore single pages from page history.
 - Page watchers may receive an update notification for each converted page.
 - The tool only touches the macros listed above. Everything else on the page stays exactly as it was.
 
-Questions: sametatesen2@gmail.com
+Questions: support@atesensoftware.com

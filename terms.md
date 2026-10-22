@@ -1,10 +1,10 @@
 ---
-title: End User Terms — OpenAPI Viewer for Confluence
+title: End User Terms — Atesen OpenAPI & Swagger Viewer for Confluence
 ---
 
 # End User Terms
 
-**App:** OpenAPI Viewer for Confluence
+**App:** Atesen OpenAPI & Swagger Viewer for Confluence
 **Publisher:** Atesen Software (independent developer, Türkiye)
 **Last updated:** 2 October 2026
 
@@ -28,7 +28,7 @@ Definitions loaded from a URL come from the server you configured. The publisher
 
 ## 5. Support
 
-Support is provided by email at sametatesen2@gmail.com, with a target first response of two business days (Monday–Friday, Istanbul time). See the support page for scope and severity levels.
+Support is provided by email at support@atesensoftware.com, with a target first response of two business days (Monday–Friday, Istanbul time). See the support page for scope and severity levels.
 
 ## 6. No warranty
 
@@ -48,4 +48,4 @@ These terms are governed by the laws of the Republic of Türkiye, and the courts
 
 ## 10. Contact
 
-Atesen Software — sametatesen2@gmail.com
+Atesen Software — support@atesensoftware.com

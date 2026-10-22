@@ -1,11 +1,11 @@
 ---
-title: Support — OpenAPI Viewer for Confluence
+title: Support — Atesen OpenAPI & Swagger Viewer for Confluence
 ---
 
 # Support
 
-**App:** OpenAPI Viewer for Confluence · **Publisher:** Atesen Software
-**Email:** sametatesen2@gmail.com · **First response target:** 2 business days (Monday–Friday, Istanbul time, UTC+3)
+**App:** Atesen OpenAPI & Swagger Viewer for Confluence · **Publisher:** Atesen Software
+**Email:** support@atesensoftware.com · **First response target:** 2 business days (Monday–Friday, Istanbul time, UTC+3)
 
 ## Getting started
 
@@ -14,6 +14,29 @@ title: Support — OpenAPI Viewer for Confluence
 3. Publish the page.
 
 To move pages from an older Connect-based Swagger app, see the [migration guide](migration-guide.html).
+
+## Try the viewer in two minutes
+
+Edit a page, type `/OpenAPI`, choose **OpenAPI Viewer** and use one of these inputs:
+
+- **URL:** `https://petstore3.swagger.io/api/v3/openapi.json`
+- **Pasted definition:** a minimal example:
+
+```yaml
+openapi: 3.0.0
+info:
+  title: Demo API
+  version: 1.0.0
+paths:
+  /hello:
+    get:
+      summary: Say hello
+      responses:
+        '200':
+          description: OK
+```
+
+- **Attachment:** attach any `.yaml`, `.yml` or `.json` definition to the page and pick it in the macro settings.
 
 ## Before you write
 
@@ -44,4 +67,4 @@ Releases are published through the Atlassian Marketplace with release notes. Min
 
 ## Security reports
 
-Email sametatesen2@gmail.com with the subject line **SECURITY**. We acknowledge within 2 business days and tell you when a fix ships.
+Email support@atesensoftware.com with the subject line **SECURITY**. We acknowledge within 2 business days and tell you when a fix ships.
