@@ -53,7 +53,7 @@ To try the whole migration on such a site (version 3.1.0 and later):
 3. Click **Convert 1 page**, open the test page and check the three definitions. Then try **Undo this migration**.
 4. Delete the test page when you are done.
 
-To try the viewer itself without legacy macros, see [Try the viewer in two minutes](support.html#try-the-viewer).
+To try the viewer itself without legacy macros, see [Try the viewer in two minutes](support.html#try-the-viewer-in-two-minutes).
 
 ## Good to know
 
