@@ -6,7 +6,7 @@ title: Migrating Swagger / OpenAPI macros before Connect end of support
 
 Atlassian ends support for Connect apps on **31 January 2027**. After that date Connect apps receive only critical security fixes, and Atlassian has said some Connect features may stop working with little notice. If your API documentation lives in a macro from a Connect app that has not moved to Forge, Atlassian Administration → Connected apps shows a banner like *"This app is running on a platform that will be unsupported after January 2027"*.
 
-Moving to a different app normally means opening every page and re-creating every macro by hand. OpenAPI Viewer includes a migration tool that does this for you.
+Moving to a different app normally means opening every page and re-creating every macro by hand. Atesen OpenAPI & Swagger Viewer includes a migration tool that does this for you.
 
 ## Which macros can be migrated
 
@@ -19,7 +19,7 @@ The migration tool recognises these Connect macro keys:
 | `swagger-ui` | Swagger UI for Confluence |
 | `confluence-open-api`, `open-api` | Open API (Swagger) Editor / Viewer |
 
-These are app names as listed on the Atlassian Marketplace; OpenAPI Viewer is not affiliated with their publishers.
+These are app names as listed on the Atlassian Marketplace; Atesen OpenAPI & Swagger Viewer is not affiliated with their publishers.
 
 What is carried over:
 
@@ -34,7 +34,7 @@ What is not carried over:
 ## Step by step
 
 1. Install **Atesen OpenAPI & Swagger Viewer for Confluence** from the Atlassian Marketplace. Keep the old app installed for now.
-2. Go to **Confluence administration → Apps → OpenAPI Viewer - migrate Swagger macros**.
+2. Go to **Confluence administration → Apps → Atesen OpenAPI & Swagger Viewer - migrate Swagger macros**.
 3. Click **Scan for legacy macros**. You'll see every page you can access that contains one of the macros above, how many macros it has and where each definition comes from.
 4. Untick any pages you want to leave alone, then click **Convert**.
 5. Keep the page open until the progress bar finishes. If you close it, come back and click **Resume**.
@@ -57,7 +57,7 @@ To try the viewer itself without legacy macros, see [Try the viewer in two minut
 
 ## Good to know
 
-- Every converted page gets a normal page version with the message *"Converted Swagger/OpenAPI macros (OpenAPI Viewer migration)"*, so you can also restore single pages from page history.
+- Every converted page gets a normal page version with the message *"Converted Swagger/OpenAPI macros (Atesen OpenAPI & Swagger Viewer migration)"*, so you can also restore single pages from page history.
 - Page watchers may receive an update notification for each converted page.
 - The tool only touches the macros listed above. Everything else on the page stays exactly as it was.
 

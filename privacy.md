@@ -13,7 +13,7 @@ title: Privacy Policy — Atesen OpenAPI & Swagger Viewer for Confluence
 
 The app runs inside your Atlassian Cloud site on the Atlassian Forge platform. It has two parts:
 
-**The OpenAPI Viewer macro** shows an OpenAPI 3 or Swagger 2 definition on a Confluence page. Depending on how a page author configured the macro, the definition comes from:
+**The Atesen OpenAPI & Swagger Viewer macro** shows an OpenAPI 3 or Swagger 2 definition on a Confluence page. Depending on how a page author configured the macro, the definition comes from:
 
 - text pasted into the macro — stored by Confluence in the page itself, like any other macro setting;
 - a file attached to the page — read with the viewer's own Confluence permissions each time the page is viewed;
@@ -21,7 +21,7 @@ The app runs inside your Atlassian Cloud site on the Atlassian Forge platform. I
 
 The definition is passed to the reader's browser and rendered there. **The app does not store API definitions, and does not write them to logs.**
 
-**The migration tool** (Confluence administration → Apps) finds macros from older Connect-based Swagger/OpenAPI apps and converts them to the OpenAPI Viewer macro. To show progress, produce a report and let you undo a migration, it stores for each migrated page: the page ID, page title, space name, page version numbers, the result (for example "converted" or "failed") and an error code. It also stores the Atlassian account ID of the administrator who started the migration, so that only that administrator can follow, resume, report on, undo or delete it.
+**The migration tool** (Confluence administration → Apps) finds macros from older Connect-based Swagger/OpenAPI apps and converts them to the Atesen OpenAPI & Swagger Viewer macro. To show progress, produce a report and let you undo a migration, it stores for each migrated page: the page ID, page title, space name, page version numbers, the result (for example "converted" or "failed") and an error code. It also stores the Atlassian account ID of the administrator who started the migration, so that only that administrator can follow, resume, report on, undo or delete it.
 
 The app does not store email addresses or display names, and does not read comments, user profiles or any content other than the pages it is asked to scan or migrate. Before each migration action it makes one request for the signed-in user's own administrator status; nothing from that response is stored or logged. When an administrator clicks **Create test page**, the app creates one page with sample macros under the page the administrator chose; nothing about that page is stored by the app.
 

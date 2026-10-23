@@ -9,7 +9,7 @@ title: Support — Atesen OpenAPI & Swagger Viewer for Confluence
 
 ## Getting started
 
-1. Edit a page, type `/OpenAPI` and choose **OpenAPI Viewer**.
+1. Edit a page, type `/OpenAPI` and choose **Atesen OpenAPI & Swagger Viewer**.
 2. Paste a definition (YAML or JSON), pick a `.yaml`, `.yml` or `.json` file attached to the page, or enter a URL.
 3. Publish the page.
 
@@ -17,7 +17,7 @@ To move pages from an older Connect-based Swagger app, see the [migration guide]
 
 ## Try the viewer in two minutes
 
-Edit a page, type `/OpenAPI`, choose **OpenAPI Viewer** and use one of these inputs:
+Edit a page, type `/OpenAPI`, choose **Atesen OpenAPI & Swagger Viewer** and use one of these inputs:
 
 - **URL:** `https://petstore3.swagger.io/api/v3/openapi.json`
 - **Pasted definition:** a minimal example:
